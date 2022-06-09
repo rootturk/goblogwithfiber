@@ -145,6 +145,7 @@ func DeleteArticle(c *fiber.Ctx){
 type User struct {
 	gorm.Model
 	Username string
+	UserType int32
 	Password string
 	Email string
 	BlogId int32
